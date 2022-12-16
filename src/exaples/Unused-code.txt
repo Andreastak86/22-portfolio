@@ -1,0 +1,204 @@
+
+/*Scroll down code som var brukt i Header.jsx under <div>profil-pic</div>*/ 
+
+
+{/* <a href='#contact' className='scroll__down'>
+          Scroll Down
+        </a> */}
+
+
+
+/////////////////////////////////////////////////////////////////////////////
+
+
+/* CSS prop under header.css*/
+
+.scroll__down {
+  position: absolute;
+  right: -2.3rem;
+  bottom: 5rem;
+  padding: 0.75rem 0.5rem;
+  transform: rotate(90deg);
+  font-weight: 300;
+  font-size: 1.2rem;
+  color: var(--color-header);
+  border: 1px yellow solid;
+}
+
+/////////////////////////////////////////////////////////////////////////////////
+
+//////////////////////////Trying to style react icons///////////////////////////////////////////////
+
+function FiLinkedinWhite() {
+  return (
+    <IconContext.Provider value={{ color: "white", size: "50px" }}>
+      <div>
+        <FiLinkedin />
+      </div>
+    </IconContext.Provider>
+  );
+}
+
+/////////////////////////////////////////////////////////////////////////////////
+
+
+
+////////////////////////////about.jsx img section////////////////////////////////////
+
+import Me from "../../assets/Andreas-profile.jpg";
+
+<div className='about__me'></div>
+ <div className='about__me-img'>
+            <img src={Me} alt='pic of me' />
+          </div>
+
+//////////////////////////////////////////////////
+
+
+
+
+
+/////////////////////////////Portfolio items to array/////////////////////////////
+
+ <div className='container portfolio__container'>
+        <article className='portfolio__item'>
+          <div className='portfolio__item-image'>
+            <img src={IMG2} alt='project-pictures' />
+            <h3>Collatz Formel</h3>
+          </div>
+          <div className='portfolio__item-cta'>
+            <a
+              href='https://github.com/Andreastak86/Collatz-Oppgave'
+              className='btn'
+              alt='Collatz-task'
+            >
+              Collatz Formel
+            </a>
+            <a
+              href='https://andreastak86.github.io/Collatz-Oppgave'
+              className='btn btn-primary'
+              target='_blank'
+              rel='noreferrer'
+            >
+              Live Demo
+            </a>
+          </div>
+        </article>
+      </div>
+
+      <div className='container portfolio__container'>
+        <article className='portfolio__item'>
+          <div className='portfolio__item-image'>
+            <img src={IMG3} alt='project-pictures' />
+            <h3>To-Do List</h3>
+          </div>
+          <div className='portfolio__item-cta'>
+            <a
+              href='https://github.com/Andreastak86/To-Do-List-2808'
+              className='btn'
+              alt='To-do-List'
+            >
+              To-Do List
+            </a>
+            <a
+              href='https://andreastak86.github.io/To-Do-List-2808/'
+              className='btn btn-primary'
+              target='_blank'
+              rel='noreferrer'
+            >
+              Live Demo
+            </a>
+          </div>
+        </article>
+      </div>
+
+      <div className='container portfolio__container'>
+        <article className='portfolio__item'>
+          <div className='portfolio__item-image'>
+            <img src={IMG4} alt='project-pictures' />
+            <h3>Click to Action</h3>
+          </div>
+          <div className='portfolio__item-cta'>
+            <a
+              href='https://github.com/Andreastak86/Oppgave-planleggingsuke'
+              className='btn'
+              alt='CTA-Oppgave'
+            >
+              ClickToAction
+            </a>
+            <a
+              href='https://andreastak86.github.io/Oppgave-planleggingsuke/'
+              className='btn btn-primary'
+              target='_blank'
+              rel='noreferrer'
+            >
+              Live Demo
+            </a>
+          </div>
+        </article>
+      </div>
+
+
+      ////////////////////////////////////////////////////////////////////////
+
+         <article className='portfolio__item'>
+          <div className='portfolio__item-image'>
+            <img src={IMG1} alt='project-pictures' />
+          </div>
+          <h3>Drum-Kit</h3>
+          <div className='portfolio__item-cta'>
+            <a
+              href='https://github.com/Andreastak86/Drum-kit.2.0'
+              className='btn'
+              alt='Drum-kit project'
+            >
+              Drum-Kit
+            </a>
+            <a
+              href='https://andreastak86.github.io/Drum-kit.2.0/'
+              className='btn btn-primary'
+              target='_blank'
+              rel='noreferrer'
+            >
+              Live Demo
+            </a>
+          </div>
+        </article>
+
+
+
+/////////////////////////////////////////////testemonials////////////////////////////
+
+    <article className='testemonial'>
+          <div className='client__avatar'>
+            <img src={T1} alt='Test1' />
+          </div>
+          <h5 className='client__name'>AOC U32</h5>
+          <small className='client__review'></small>
+        </article>
+
+        <article className='testemonial'>
+          <div className='client__avatar'>
+            <img src={T2} alt='Test2' />
+          </div>
+          <h5 className='client__name'>Arlo Doorbell</h5>
+          <small className='client__review'></small>
+        </article>
+
+        <article className='testemonial'>
+          <div className='client__avatar'>
+            <img src={T3} alt='Test3' />
+          </div>
+          <h5 className='client__name'>OnePlus 8T</h5>
+          <small className='client__review'></small>
+        </article>
+
+        <article className='testemonial'>
+          <div className='client__avatar'>
+            <img src={T4} alt='Test4' />
+          </div>
+          <h5 className='client__name'>Phillips 272 </h5>
+          <small className='client__review'></small>
+        </article>
+
+        

@@ -1,0 +1,12 @@
+/*This is only css for the insta-components*/
+
+.instagram__container {
+  background: transparent;
+  /* border: 2px solid red; */
+  text-align: center;
+  padding: 3rem;
+  margin-top: 4rem;
+}
+button {
+  margin-top: 2rem;
+}
