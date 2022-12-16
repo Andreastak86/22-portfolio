@@ -1,16 +1,27 @@
 {
   "files": {
-    "main.css": "/22-portfolio/static/css/main.073c9b0a.css",
-    "main.js": "/22-portfolio/static/js/main.3b6d0a56.js",
-    "static/js/787.2fc15754.chunk.js": "/22-portfolio/static/js/787.2fc15754.chunk.js",
-    "static/media/logo.svg": "/22-portfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "main.css": "/22-portfolio/static/css/main.1ea189df.css",
+    "main.js": "/22-portfolio/static/js/main.bcadc025.js",
+    "static/media/funny-profile.png": "/22-portfolio/static/media/funny-profile.54f85c7968f1809681c6.png",
+    "static/media/collatz.jpg": "/22-portfolio/static/media/collatz.6cfed9008308b81513d8.jpg",
+    "static/media/Cta-oppgave.jpg": "/22-portfolio/static/media/Cta-oppgave.958e898222a4aa465f2d.jpg",
+    "static/media/drum-kit.jpg": "/22-portfolio/static/media/drum-kit.a2bfb62eb140cc617e81.jpg",
+    "static/media/CV Andreas Takvam 2022.pdf": "/22-portfolio/static/media/CV Andreas Takvam 2022.f614bb9317d6f423a116.pdf",
+    "static/media/to-do.jpg": "/22-portfolio/static/media/to-do.b1f846ffc8fa21887dc7.jpg",
+    "static/media/Phillips 27E1.jpg": "/22-portfolio/static/media/Phillips 27E1.b85dbd6561d990f68034.jpg",
+    "static/media/Phillips 24E1.jpg": "/22-portfolio/static/media/Phillips 24E1.ed6aa2beffde3a028311.jpg",
+    "static/media/Phillips 243s1.jpg": "/22-portfolio/static/media/Phillips 243s1.c4bd393d8b2a7926daad.jpg",
+    "static/media/Phil 272.jpg": "/22-portfolio/static/media/Phil 272.91fd5f6c649f7885073f.jpg",
+    "static/media/Arlo.jpg": "/22-portfolio/static/media/Arlo.a6ba3b1b0be2f427c14b.jpg",
+    "static/media/AOC U32.jpg": "/22-portfolio/static/media/AOC U32.cca07bbefce61d3661a3.jpg",
+    "static/media/Solsystemet.jpg": "/22-portfolio/static/media/Solsystemet.9f94978756ac6cf15ce5.jpg",
+    "static/media/OP8T.jpg": "/22-portfolio/static/media/OP8T.ed01902e75468367d5a4.jpg",
     "index.html": "/22-portfolio/index.html",
-    "main.073c9b0a.css.map": "/22-portfolio/static/css/main.073c9b0a.css.map",
-    "main.3b6d0a56.js.map": "/22-portfolio/static/js/main.3b6d0a56.js.map",
-    "787.2fc15754.chunk.js.map": "/22-portfolio/static/js/787.2fc15754.chunk.js.map"
+    "main.1ea189df.css.map": "/22-portfolio/static/css/main.1ea189df.css.map",
+    "main.bcadc025.js.map": "/22-portfolio/static/js/main.bcadc025.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.3b6d0a56.js"
+    "static/css/main.1ea189df.css",
+    "static/js/main.bcadc025.js"
   ]
 }
