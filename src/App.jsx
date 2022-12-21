@@ -9,22 +9,24 @@ import Testemonials from "./components/testemonials/Testemonials";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
 import Insta from "./components/instagram/instagram";
+import Work from "./components/portfolio/Work";
 
 const App = () => {
-  return (
-    <>
-      <Header />
-      <Nav />
-      <About />
-      <Experience />
-      <Services />
-      <Portfolio />
-      <Testemonials />
-      <Insta />
-      <Contact />
-      <Footer />
-    </>
-  );
+    return (
+        <>
+            <Header />
+            <Nav />
+            <About />
+            <Experience />
+            <Services />
+            <Portfolio />
+            <Work />
+            <Testemonials />
+            <Insta />
+            <Contact />
+            <Footer />
+        </>
+    );
 };
 
 export default App;
