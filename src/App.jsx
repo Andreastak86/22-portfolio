@@ -10,6 +10,7 @@ import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
 import Insta from "./components/instagram/instagram";
 import Work from "./components/portfolio/Work";
+import { Analytics } from "@vercel/analytics/react";
 
 const App = () => {
     return (
@@ -25,6 +26,7 @@ const App = () => {
             <Insta />
             <Contact />
             <Footer />
+            <Analytics />
         </>
     );
 };
