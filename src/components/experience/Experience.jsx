@@ -70,7 +70,7 @@ const Experience = () => {
                             <div>
                                 <h4>NextJS</h4>
                                 <small className='text-light'>
-                                    Begynner å få teken
+                                    Foretrukket rammeverk
                                 </small>
                             </div>
                         </article>
