@@ -1,6 +1,8 @@
 import React from "react";
 import "./portfolio.css";
 import IMG1 from "../../assets/BAC.jpg";
+import IMG2 from "../../assets/forny-hero.png";
+import IMG3 from "../../assets/noen-hero.png";
 
 // import Swiper core and required modules
 import { Navigation, Pagination, Autoplay } from "swiper";
@@ -16,6 +18,18 @@ const data = [
         image: IMG1,
         title: "Bergen Armwrestling Club",
         webside: "https://bergenarmwrestling.no",
+    },
+    {
+        id: 2,
+        image: IMG2,
+        title: "Forny Norge AS",
+        webside: "https://www.fornynorge.no/",
+    },
+    {
+        id: 3,
+        image: IMG3,
+        title: "Noen AS",
+        webside: "https://www.noen-as.no/",
     },
 ];
 
