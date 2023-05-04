@@ -3,6 +3,7 @@ import "./portfolio.css";
 import IMG1 from "../../assets/BAC.jpg";
 import IMG2 from "../../assets/forny-hero.png";
 import IMG3 from "../../assets/noen-hero.png";
+import IMG4 from "../../assets/kodeverket-hero.png";
 
 // import Swiper core and required modules
 import { Navigation, Pagination, Autoplay } from "swiper";
@@ -31,13 +32,22 @@ const data = [
         title: "Noen AS",
         webside: "https://www.noen-as.no/",
     },
+    {
+        id: 4,
+        image: IMG4,
+        title: "Kodeverket sin hjemmeside",
+        webside: "https://www.kodeverketbergen.no",
+    },
 ];
 
 const Work = () => {
     return (
         <section id='portfolio'>
-            <h5>Som frontend developer i Kodeverket Bergen</h5>
-            <h2>Nettsider jeg har vært med å lage</h2>
+            <h5>
+                Frontend developer,
+                <br /> prosjektleder i Kodeverket Bergen
+            </h5>
+            <h2>Nettsider vi har jobbet med:</h2>
 
             <Swiper
                 className='container portfolio__container'
