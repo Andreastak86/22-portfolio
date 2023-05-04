@@ -1,46 +1,46 @@
 header {
-  min-height: 100vh;
-  padding-top: 3rem;
-  overflow: hidden;
+    min-height: 100vh;
+    padding-top: 3rem;
+    overflow: hidden;
 }
 
 .header__container {
-  text-align: center;
-  height: 100vh;
-  position: relative;
+    text-align: center;
+    height: 100vh;
+    position: relative;
 }
 
 /*------------------------Action-BTN--------------------------*/
 
 .cta {
-  margin-top: 2.5rem;
-  display: flex;
-  gap: 1.2rem;
-  justify-content: center;
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
 }
 
 /*--------------------SOME Bar on left--------------------*/
 
 .header__some {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1.2rem;
-  position: absolute;
-  left: 0;
-  /* bottom: 3rem; */
-  top: 21rem;
-  margin-left: 1rem;
-  padding: 1.2rem;
-  border-radius: 60px;
-  background: rgba(113, 142, 116, 0.2);
-  backdrop-filter: blur(px);
-  /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+    position: absolute;
+    left: 0;
+    /* bottom: 3rem; */
+    top: 21rem;
+    margin-left: 1rem;
+    padding: 1.2rem;
+    border-radius: 60px;
+    background: rgba(113, 142, 116, 0.2);
+    backdrop-filter: blur(px);
+    /* border: 2px solid red; */
 }
 
 .header__some a:hover {
-  background: var(--color-bg);
-  border-radius: 30%;
+    background: var(--color-bg);
+    border-radius: 30%;
 }
 
 /* .header__some::after {
@@ -53,18 +53,16 @@ header {
 /*------------------Profile Pic --------------------*/
 
 .profile-pic {
-  background: linear-gradient(to right, #718e7459 0%, #1e2e2096 90%);
-  width: 22rem;
-  height: 30rem;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  margin-top: 4rem;
-
-  border-radius: 60px;
-
-  overflow: hidden;
-  padding: 5rem 1.5rem 1.5rem 1.5rem;
+    background: linear-gradient(to right, #718e7459 0%, #1e2e2096 90%);
+    width: 18rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 2rem;
+    /* border: 2px solid red; */
+    border-radius: 60px;
+    overflow: visible;
+    padding: 2rem;
 }
 
 /* .profile-pic img {
@@ -77,23 +75,23 @@ header {
 
 /*-----------------------Media Queries Medium---------------*/
 @media screen and (max-width: 1024px) {
-  header {
-    height: 68vh;
-  }
-  .header__container {
-    height: 100vh;
-  }
+    header {
+        height: 68vh;
+    }
+    .header__container {
+        height: 100vh;
+    }
 }
 
 /*-----------------------Media Queries Small---------------*/
 @media screen and (max-width: 600px) {
-  header {
-    height: 100vh;
-  }
-  .header__container {
-    height: 100vh;
-  }
-  .header__some {
-    display: none;
-  }
+    header {
+        height: 100vh;
+    }
+    .header__container {
+        height: 100vh;
+    }
+    .header__some {
+        display: none;
+    }
 }
