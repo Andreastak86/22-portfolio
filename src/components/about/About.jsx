@@ -2,10 +2,44 @@ import React from "react";
 import Pitch from "./Pitch";
 import "./about.css";
 
-import { FaCode } from "react-icons/fa";
-import { FaFileContract } from "react-icons/fa";
+import { FaCode, FaFileContract } from "react-icons/fa";
 import { ImFolderOpen } from "react-icons/im";
 import { GoCode } from "react-icons/go";
+import { IoRestaurant } from "react-icons/io5";
+import { MdHomeWork } from "react-icons/md";
+
+const cardData = [
+    {
+        icon: <GoCode className='about__icon' />,
+        title: "Erfaring Med Kode:",
+        content: "2 År Med Frontend",
+    },
+    {
+        icon: <FaFileContract className='about__icon' />,
+        title: "Tidligere Erfaring:",
+        content: "15 År Med Salg",
+    },
+    {
+        icon: <ImFolderOpen className='about__icon' />,
+        title: "Prosjekter:",
+        content: "5 +",
+    },
+    {
+        icon: <FaCode className='about__icon' />,
+        title: "Kodeklubben på Os:",
+        content: "Aktivt Medlem",
+    },
+    {
+        icon: <MdHomeWork className='about__icon' />,
+        title: "Ansatt i Weld IT AS:",
+        content: "Utviklingsleder",
+    },
+    {
+        icon: <IoRestaurant className='about__icon' />,
+        title: "Hobbykokk:",
+        content: "Sunn og God Mat",
+    },
+];
 
 const About = () => {
     return (
@@ -15,28 +49,13 @@ const About = () => {
             <div className='container about__container'>
                 <div className='about__content'>
                     <div className='about__cards'>
-                        <article className='about__card'>
-                            <GoCode className='about__icon' />
-                            <h5>Erfaring Med Kode:</h5>
-                            <small>Snart 1 År Med Front-End</small>
-                        </article>
-
-                        <article className='about__card'>
-                            <FaFileContract className='clients__icon' />
-                            <h5>Tidligere Erfaring:</h5>
-                            <small>15 År Med Salg</small>
-                        </article>
-
-                        <article className='about__card'>
-                            <ImFolderOpen className='projects__icon' />
-                            <h5>Prosjekter:</h5>
-                            <small>5 +</small>
-                        </article>
-                        <article className='about__card'>
-                            <FaCode className='about__icon' />
-                            <h5>Kodeklubben på Os:</h5>
-                            <small>Aktivt medlem</small>
-                        </article>
+                        {cardData.map((card, index) => (
+                            <article className='about__card' key={index}>
+                                {card.icon}
+                                <h5>{card.title}</h5>
+                                <small>{card.content}</small>
+                            </article>
+                        ))}
                     </div>
                     <Pitch />
                     <div className='contact-btn'>

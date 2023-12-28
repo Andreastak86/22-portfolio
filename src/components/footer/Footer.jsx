@@ -3,6 +3,7 @@ import "./footer.css";
 // import { FaToiletPaper } from "react-icons/fa";
 
 function Footer() {
+    const currentYear = new Date().getFullYear();
     return (
         <footer>
             <a href='#top' className='footer__logo'>
@@ -42,7 +43,7 @@ function Footer() {
       </div> */}
 
             <div className='footer__copyright'>
-                <small>&copy; Andreas Takvam 2023</small>
+                <small>&copy; Andreas Takvam {currentYear}</small>
             </div>
         </footer>
     );
