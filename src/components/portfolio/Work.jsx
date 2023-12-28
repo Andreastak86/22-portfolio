@@ -1,5 +1,5 @@
 import React from "react";
-import "./portfolio.css";
+import "./work.css";
 import IMG1 from "../../assets/BAC.jpg";
 import IMG2 from "../../assets/forny-hero.png";
 import IMG3 from "../../assets/noen-hero.png";
@@ -51,7 +51,6 @@ const Work = () => {
 
             <Swiper
                 className='container portfolio__container'
-                // install Swiper modules
                 slidesPerView={1}
                 spaceBetween={40}
                 loop={false}
@@ -67,7 +66,10 @@ const Work = () => {
                     return (
                         <SwiperSlide key={id} className='portfolio__item'>
                             <div className='portfolio__item-image'>
-                                <img src={image} alt={title} />
+                                <img
+                                    src={image}
+                                    alt={`Screenshot of ${title} website`}
+                                />
                             </div>
                             <h3>{title}</h3>
                             <div className='portfolio__item-cta'>
@@ -76,7 +78,7 @@ const Work = () => {
                                     className='btn'
                                     target='_blank'
                                     rel='noreferrer'
-                                    alt='Bergen Armwrestling Club nettside'
+                                    alt={`${title} website`}
                                 >
                                     Webside
                                 </a>

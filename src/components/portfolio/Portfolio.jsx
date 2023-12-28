@@ -60,7 +60,6 @@ const Portfolio = () => {
 
             <Swiper
                 className='container portfolio__container'
-                // install Swiper modules
                 slidesPerView={1}
                 spaceBetween={40}
                 loop={true}
@@ -76,7 +75,7 @@ const Portfolio = () => {
                     return (
                         <SwiperSlide key={id} className='portfolio__item'>
                             <div className='portfolio__item-image'>
-                                <img src={image} alt={title} />
+                                <img src={image} alt={`Project: ${title}`} />
                             </div>
                             <h3>{title}</h3>
                             <div className='portfolio__item-cta'>
@@ -85,7 +84,7 @@ const Portfolio = () => {
                                     className='btn'
                                     target='_blank'
                                     rel='noreferrer'
-                                    alt='Drum-kit project'
+                                    aria-label='GitHub Repository'
                                 >
                                     GitHub
                                 </a>
@@ -94,6 +93,7 @@ const Portfolio = () => {
                                     className='btn btn-primary'
                                     target='_blank'
                                     rel='noreferrer'
+                                    aria-label='Live Demo'
                                 >
                                     Live Demo
                                 </a>
