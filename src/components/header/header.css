@@ -6,7 +6,7 @@ header {
 
 .header__container {
     text-align: center;
-    height: 100vh;
+    height: 100%;
     position: relative;
 }
 
@@ -28,14 +28,11 @@ header {
     gap: 1.2rem;
     position: absolute;
     left: 0;
-    /* bottom: 3rem; */
-    top: 21rem;
     margin-left: 1rem;
     padding: 1.2rem;
     border-radius: 60px;
     background: rgba(113, 142, 116, 0.2);
     backdrop-filter: blur(px);
-    /* border: 2px solid red; */
 }
 
 .header__some a:hover {
@@ -59,20 +56,29 @@ header {
     left: 50%;
     transform: translateX(-50%);
     margin-top: 2rem;
-    /* border: 2px solid red; */
     border-radius: 60px;
-    overflow: visible;
-    padding: 2rem;
+    overflow: hidden; /*
+     Ensure the container clips the image properly */
 }
 
-/* .profile-pic img {
-  border: 2px solid var(--color-header);
-  border-radius: 3rem;
-  padding: 3rem;
-  display: flex;
-  align-content: center;
-} */
-
+.profile-pic img {
+    width: 100%; /* Ensure the image takes up 100% width of the container */
+    height: auto; /* Maintain the aspect ratio */
+    border-radius: 3rem;
+}
+/*-----------------------Media Queries Big---------------*/
+@media screen and (min-width: 1024px) {
+    header {
+        height: 68vh;
+    }
+    .header__container {
+        height: 100vh;
+    }
+    .profile-pic {
+        margin-top: 8rem;
+        padding: 4 2rem;
+    }
+}
 /*-----------------------Media Queries Medium---------------*/
 @media screen and (max-width: 1024px) {
     header {
