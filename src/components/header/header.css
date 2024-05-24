@@ -17,6 +17,7 @@ header {
     display: flex;
     gap: 1.2rem;
     justify-content: center;
+    /* border: 2px solid red; */
 }
 
 /*--------------------SOME Bar on left--------------------*/
@@ -101,27 +102,45 @@ header {
         display: none;
     }
 }
-.dropdown {
-    position: relative;
-    display: inline-block;
+.btn {
+    background-color: inherit; /* Blå bakgrunn */
+    color: white; /* Hvit tekst */
+    padding: 10px 20px; /* Polstring */
+    margin: 1rem; /* Margin */
+    text-align: center; /* Sentrer tekst */
+    text-decoration: none; /* Fjern underlinje fra lenker */
+    display: inline-block; /* Inline blokk for å respektere padding og margin */
+    font-size: 16px; /* Tekststørrelse */
+    border: none; /* Ingen kant */
+    border-radius: 5px; /* Runde hjørner */
+    cursor: pointer; /* Pekeren endres til hånd når du holder over knappen */
+    position: relative; /* Legg til posisjon relativt til foreldreelementet */
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Mørkere blå ved hover */
 }
 
 .dropdown-content {
-    display: block;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+    display: none; /* Skjul dropdown-menyen som standard */
+    position: absolute; /* Posisjoner absolutt relativt til .btn */
+    background-color: #124559; /* Bakgrunnsfarge */
+    min-width: 160px; /* Minimum bredde */
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); /* Skygge */
+    z-index: 1; /* Sørg for at dropdown vises over annet innhold */
+}
+
+.dropdown-content.show {
+    display: block; /* Vis dropdown-menyen når .show-klassen legges til */
 }
 
 .dropdown-item {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
+    color: black; /* Tekstfarge */
+    padding: 12px 16px; /* Polstring */
+    text-decoration: none; /* Ingen tekstdekorasjon */
+    display: block; /* Blokkvisning for å fylle hele bredden */
 }
 
 .dropdown-item:hover {
-    background-color: #f1f1f1;
+    background-color: #124559; /* Lys grå bakgrunn ved hover */
 }
