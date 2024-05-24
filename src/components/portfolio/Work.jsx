@@ -1,6 +1,9 @@
 import React from "react";
-import "./portfolio.css";
+import "./work.css";
 import IMG1 from "../../assets/BAC.jpg";
+import IMG2 from "../../assets/forny-hero.png";
+import IMG3 from "../../assets/noen-hero.png";
+import IMG4 from "../../assets/kodeverket-hero.png";
 
 // import Swiper core and required modules
 import { Navigation, Pagination, Autoplay } from "swiper";
@@ -17,17 +20,37 @@ const data = [
         title: "Bergen Armwrestling Club",
         webside: "https://bergenarmwrestling.no",
     },
+    {
+        id: 2,
+        image: IMG2,
+        title: "Forny Norge AS",
+        webside: "https://www.fornynorge.no/",
+    },
+    {
+        id: 3,
+        image: IMG3,
+        title: "Noen AS",
+        webside: "https://www.noen-as.no/",
+    },
+    {
+        id: 4,
+        image: IMG4,
+        title: "Kodeverket sin hjemmeside",
+        webside: "https://www.kodeverketbergen.no",
+    },
 ];
 
 const Work = () => {
     return (
         <section id='portfolio'>
-            <h5>Som frontend developer i Kodeverket Bergen</h5>
-            <h2>Nettsider jeg har vært med å lage</h2>
+            <h5>
+                Frontend developer,
+                <br /> prosjektleder i Kodeverket Bergen
+            </h5>
+            <h2>Nettsider vi har jobbet med:</h2>
 
             <Swiper
                 className='container portfolio__container'
-                // install Swiper modules
                 slidesPerView={1}
                 spaceBetween={40}
                 loop={false}
@@ -43,7 +66,10 @@ const Work = () => {
                     return (
                         <SwiperSlide key={id} className='portfolio__item'>
                             <div className='portfolio__item-image'>
-                                <img src={image} alt={title} />
+                                <img
+                                    src={image}
+                                    alt={`Screenshot of ${title} website`}
+                                />
                             </div>
                             <h3>{title}</h3>
                             <div className='portfolio__item-cta'>
@@ -52,7 +78,7 @@ const Work = () => {
                                     className='btn'
                                     target='_blank'
                                     rel='noreferrer'
-                                    alt='Bergen Armwrestling Club nettside'
+                                    alt={`${title} website`}
                                 >
                                     Webside
                                 </a>

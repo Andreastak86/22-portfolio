@@ -1,4 +1,12 @@
-.container portfolio__container {
+.container.portfolio__container {
+    position: relative;
+}
+
+.swiper-pagination-bullets {
+    z-index: 1; /* Ensure a higher z-index for pagination dots */
+}
+
+.portfolio__container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2.5rem;
@@ -6,10 +14,11 @@
 
 .portfolio__item {
     background: var(--color-bg);
-    padding: 3.5rem;
+    padding: 1.5rem;
     border-radius: 2rem;
     border: 1px solid transparent;
     transition: var(--transition);
+    overflow: hidden; /* Ensure the container clips the image properly */
 }
 
 .portfolio__item:hover {
@@ -18,16 +27,20 @@
 }
 
 .portfolio__item-image {
+    width: 100%; /* Ensure the image takes up 100% width of the container */
+    height: auto; /* Maintain the aspect ratio */
     border-radius: 1.5rem;
-    overflow: hidden;
+    transition: transform var(--transition); /* Apply transition to the transform property */
+}
 
-    transform: scale(0.7); /* Add this line to scale the image down by 50% */
+.portfolio__item:hover .portfolio__item-image {
+    transform: scale(0.8); /* Adjust the scale value as needed */
 }
 
 .portfolio__item h3 {
     display: flex;
     justify-content: center;
-    margin: 1.2rem 0 2rem;
+    margin: 1rem 0 2rem;
 }
 
 .portfolio__item-cta {

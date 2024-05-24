@@ -1,0 +1,15 @@
+.api-call-container {
+    text-align: center;
+    padding: 20px;
+    background-color: transparent;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.error-message {
+    color: red;
+}
+
+.line_up {
+    margin-top: 10px;
+}

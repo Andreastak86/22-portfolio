@@ -1,46 +1,44 @@
 header {
-  min-height: 100vh;
-  padding-top: 3rem;
-  overflow: hidden;
+    min-height: 100vh;
+    padding-top: 3rem;
+    overflow: hidden;
 }
 
 .header__container {
-  text-align: center;
-  height: 100vh;
-  position: relative;
+    text-align: center;
+    height: 100%;
+    position: relative;
 }
 
 /*------------------------Action-BTN--------------------------*/
 
 .cta {
-  margin-top: 2.5rem;
-  display: flex;
-  gap: 1.2rem;
-  justify-content: center;
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+    /* border: 2px solid red; */
 }
 
 /*--------------------SOME Bar on left--------------------*/
 
 .header__some {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1.2rem;
-  position: absolute;
-  left: 0;
-  /* bottom: 3rem; */
-  top: 21rem;
-  margin-left: 1rem;
-  padding: 1.2rem;
-  border-radius: 60px;
-  background: rgba(113, 142, 116, 0.2);
-  backdrop-filter: blur(px);
-  /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+    position: absolute;
+    left: 0;
+    margin-left: 1rem;
+    padding: 1.2rem;
+    border-radius: 60px;
+    background: rgba(113, 142, 116, 0.2);
+    backdrop-filter: blur(px);
 }
 
 .header__some a:hover {
-  background: var(--color-bg);
-  border-radius: 30%;
+    background: var(--color-bg);
+    border-radius: 30%;
 }
 
 /* .header__some::after {
@@ -53,47 +51,96 @@ header {
 /*------------------Profile Pic --------------------*/
 
 .profile-pic {
-  background: linear-gradient(to right, #718e7459 0%, #1e2e2096 90%);
-  width: 22rem;
-  height: 30rem;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  margin-top: 4rem;
-
-  border-radius: 60px;
-
-  overflow: hidden;
-  padding: 5rem 1.5rem 1.5rem 1.5rem;
+    background: linear-gradient(to right, #718e7459 0%, #1e2e2096 90%);
+    width: 18rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 2rem;
+    border-radius: 60px;
+    overflow: hidden; /*
+     Ensure the container clips the image properly */
 }
 
-/* .profile-pic img {
-  border: 2px solid var(--color-header);
-  border-radius: 3rem;
-  padding: 3rem;
-  display: flex;
-  align-content: center;
-} */
-
+.profile-pic img {
+    width: 100%; /* Ensure the image takes up 100% width of the container */
+    height: auto; /* Maintain the aspect ratio */
+    border-radius: 3rem;
+}
+/*-----------------------Media Queries Big---------------*/
+@media screen and (min-width: 1024px) {
+    header {
+        height: 68vh;
+    }
+    .header__container {
+        height: 100vh;
+    }
+    .profile-pic {
+        margin-top: 8rem;
+        padding: 4 2rem;
+    }
+}
 /*-----------------------Media Queries Medium---------------*/
 @media screen and (max-width: 1024px) {
-  header {
-    height: 68vh;
-  }
-  .header__container {
-    height: 100vh;
-  }
+    header {
+        height: 68vh;
+    }
+    .header__container {
+        height: 100vh;
+    }
 }
 
 /*-----------------------Media Queries Small---------------*/
 @media screen and (max-width: 600px) {
-  header {
-    height: 100vh;
-  }
-  .header__container {
-    height: 100vh;
-  }
-  .header__some {
-    display: none;
-  }
+    header {
+        height: 100vh;
+    }
+    .header__container {
+        height: 100vh;
+    }
+    .header__some {
+        display: none;
+    }
+}
+.btn {
+    background-color: inherit; /* Blå bakgrunn */
+    color: white; /* Hvit tekst */
+    padding: 10px 20px; /* Polstring */
+    margin: 1rem; /* Margin */
+    text-align: center; /* Sentrer tekst */
+    text-decoration: none; /* Fjern underlinje fra lenker */
+    display: inline-block; /* Inline blokk for å respektere padding og margin */
+    font-size: 16px; /* Tekststørrelse */
+    border: none; /* Ingen kant */
+    border-radius: 5px; /* Runde hjørner */
+    cursor: pointer; /* Pekeren endres til hånd når du holder over knappen */
+    position: relative; /* Legg til posisjon relativt til foreldreelementet */
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Mørkere blå ved hover */
+}
+
+.dropdown-content {
+    display: none; /* Skjul dropdown-menyen som standard */
+    position: absolute; /* Posisjoner absolutt relativt til .btn */
+    background-color: #124559; /* Bakgrunnsfarge */
+    min-width: 160px; /* Minimum bredde */
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); /* Skygge */
+    z-index: 1; /* Sørg for at dropdown vises over annet innhold */
+}
+
+.dropdown-content.show {
+    display: block; /* Vis dropdown-menyen når .show-klassen legges til */
+}
+
+.dropdown-item {
+    color: black; /* Tekstfarge */
+    padding: 12px 16px; /* Polstring */
+    text-decoration: none; /* Ingen tekstdekorasjon */
+    display: block; /* Blokkvisning for å fylle hele bredden */
+}
+
+.dropdown-item:hover {
+    background-color: #124559; /* Lys grå bakgrunn ved hover */
 }
