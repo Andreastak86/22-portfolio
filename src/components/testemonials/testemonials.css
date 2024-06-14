@@ -19,6 +19,10 @@
     border-radius: 2rem;
     user-select: none;
 }
+.nbtext {
+    text-align: center;
+    margin-bottom: 1rem;
+}
 
 .client__review {
     color: var(--color-header);
