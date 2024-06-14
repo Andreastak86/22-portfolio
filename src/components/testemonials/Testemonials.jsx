@@ -68,6 +68,7 @@ const Testemonials = () => {
         <section id='testemonials'>
             <h5>På Fritiden</h5>
             <h2>Skribent for IT-Pro</h2>
+            <p className='nbtext'>NB! ITPRO.no driftes ikke lengre.</p>
 
             <Swiper
                 className='container testemonials__container'
@@ -88,15 +89,6 @@ const Testemonials = () => {
                         <SwiperSlide key={index} className='testemonial'>
                             <div className='client__avatar'>
                                 <img src={avatar} alt='Test' />
-                                <a
-                                    href={url}
-                                    className='btn__read'
-                                    alt='Article'
-                                    target='_blank'
-                                    rel='noreferrer'
-                                >
-                                    Les
-                                </a>
                             </div>
                             <h5 className='client__name'>{name}</h5>
                             <small className='client__review'>{review}</small>

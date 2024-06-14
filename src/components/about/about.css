@@ -109,6 +109,23 @@
     color: var(--color-header);
     background: var(--color-bg);
 }
+.btn-pitch {
+    width: max-content;
+    display: inline-block;
+    color: var(--color-header);
+    background: var(--color---color-bg);
+    padding: 0.75rem 1.2rem;
+    margin-top: 2rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    border: 1px solid #e7a42b;
+    transition: var(--transition);
+}
+
+.btn-pitch:hover {
+    color: var(--color-header);
+    background: var(--color-bg);
+}
 
 /*-----------------------Media Queries Medium---------------*/
 @media screen and (max-width: 1024px) {

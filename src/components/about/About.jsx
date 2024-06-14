@@ -12,7 +12,7 @@ const cardData = [
     {
         icon: <GoCode className='about__icon' />,
         title: "Erfaring Med Kode:",
-        content: "2 År Med Frontend",
+        content: "2 År med front- og backend",
     },
     {
         icon: <FaFileContract className='about__icon' />,
@@ -22,7 +22,7 @@ const cardData = [
     {
         icon: <ImFolderOpen className='about__icon' />,
         title: "Prosjekter:",
-        content: "5 +",
+        content: "20 +",
     },
     {
         icon: <FaCode className='about__icon' />,

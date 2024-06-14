@@ -15,8 +15,11 @@ function Pitch() {
     return (
         <section id='pitch'>
             <div className='about__content'>
-                <div className='about__pitch' onClick={toggleExpand}>
+                <div className='about__pitch'>
                     <h6>{isExpanded ? pitchText : `${visibleText}...`}</h6>
+                    <button onClick={toggleExpand} className='btn-pitch'>
+                        {isExpanded ? "Vis mindre" : "Vis mer"}
+                    </button>
                 </div>
             </div>
         </section>
