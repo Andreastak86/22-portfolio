@@ -4,6 +4,7 @@ import IMG1 from "../../assets/BAC.jpg";
 import IMG2 from "../../assets/forny-hero.png";
 import IMG3 from "../../assets/noen-hero.png";
 import IMG4 from "../../assets/kodeverket-hero.png";
+import IMG5 from "../../assets/IMG5.png";
 
 // import Swiper core and required modules
 import { Navigation, Pagination, Autoplay } from "swiper";
@@ -37,6 +38,12 @@ const data = [
         image: IMG4,
         title: "Kodeverket sin hjemmeside",
         webside: "https://www.kodeverketbergen.no",
+    },
+    {
+        id: 5,
+        image: IMG5,
+        title: "Ny nettside Kodehode",
+        webside: "https://www.kodehode.no",
     },
 ];
 

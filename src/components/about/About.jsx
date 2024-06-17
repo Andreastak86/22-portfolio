@@ -31,13 +31,13 @@ const cardData = [
     },
     {
         icon: <MdHomeWork className='about__icon' />,
-        title: "Ansatt i Weld IT AS:",
+        title: "Tidligere ansatt i Weld IT AS:",
         content: "Utviklingsleder",
     },
     {
         icon: <IoRestaurant className='about__icon' />,
         title: "Hobbykokk:",
-        content: "Sunn og God Mat",
+        content: "Sunn og God Mat lagd fra start",
     },
 ];
 
