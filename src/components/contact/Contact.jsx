@@ -17,7 +17,7 @@ const Contact = () => {
                 "service_69572xj",
                 "template_n8q0gqf",
                 form.current,
-                "GyOKH1R0saYvMD1DZ"
+                "T8EUIrv0Y_4ej_Izo"
             );
             e.target.reset();
             alert("Message sent successfully!");

@@ -5,7 +5,7 @@ import IMG2 from "../../assets/collatz.jpg";
 import IMG3 from "../../assets/to-do.jpg";
 import IMG4 from "../../assets/Cta-oppgave.jpg";
 import IMG5 from "../../assets/Solsystemet.jpg";
-
+import IMG6 from "../../assets/IMG6.png";
 // import Swiper core and required modules
 import { Navigation, Pagination, Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -50,12 +50,19 @@ const data = [
         github: "https://github.com/Andreastak86/Solsytemet",
         demo: "https://andreastak86.github.io/Solsytemet/",
     },
+    {
+        id: 6,
+        image: IMG6,
+        title: "Marker dine kunder på kartet!",
+        github: "https://github.com/Andreastak86/customermap",
+        demo: "https://customermap.vercel.app/",
+    },
 ];
 
 const Portfolio = () => {
     return (
         <section id='portfolio'>
-            <h5>Dette har jeg jobbet med den siste tiden</h5>
+            <h5>Noe av det jeg har jobbet med den siste tiden</h5>
             <h2>Min Portefølje</h2>
 
             <Swiper
