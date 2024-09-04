@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import CV from "../../assets/CV Andreas Takvam.pdf";
-import DetailedCV from "../../assets/CV Andreas Takvam lang.pdf";
+import DetailedCV from "../../assets/CV Andreas Takvam 2024 long.pdf";
 
 const CTA = () => {
     const [dropdownVisible, setDropdownVisible] = useState(false);
