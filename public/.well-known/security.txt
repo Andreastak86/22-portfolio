@@ -1,0 +1,5 @@
+# security.txt for andreastak.no
+
+Contact: mailto:kontakt@andreastak.no
+Expires: 2025-12-31T23:59:59.000Z
+Preferred-Languages: nb, en
